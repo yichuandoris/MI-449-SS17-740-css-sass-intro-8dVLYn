@@ -1,56 +1,48 @@
 @import "_variables";
 @import "_color";
 
-h1 {
+body {
   font-family: $serif-fonts;
+  font-size: $font-base-size * 0.8;
+}
+
+h1 {
   color: $color3;
   font-size: $font-base-size * 3;
 }
 
 h2 {
-  font-family: $serif-fonts;
   color: $color1;
   font-size: $font-base-size * 2.35;
 }
 
 h3 {
-  font-family: $serif-fonts;
   color: darken($color4, 20%);
   font-size: $font-base-size * 2;
 }
 
 h4 {
-  font-family: $serif-fonts;
   color: $color3;
   font-size: $font-base-size * 1.75;
 }
 
 h5 {
-  font-family: $serif-fonts;
   color: $color1;
   font-size: $font-base-size * 1.25;
 }
 
 h6 {
-  font-family: $serif-fonts;
   color: darken($color4, 20%);
   font-size: $font-base-size;
 }
 
-p {
-  font-family: $serif-fonts;
-  font-size: $font-base-size * 0.7;
-}
-
 a {
-  font-family: $serif-fonts;
   font-weight: bold;
-  font-size: $font-base-size;
   color: lighten($color3, 20%);
-}
 
-a:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 input,
@@ -59,33 +51,31 @@ textarea {
   background-color: $color4;
   color: $color3;
   border-radius: $border-base-radius;
-}
+  border-style: groove;
+  border-color: $color3;
 
-input.danger {
-  background-color: red;
+  &.danger {
+    color: #fff;
+    background-color: red;
+  }
 }
 
 img {
   border-radius: $border-base-radius;
 }
 
-figure {
-  font-family: $serif-fonts;
-  font-size: $font-base-size * 0.7;
-}
-
 table {
-  background-color: $color2;
+  background-color: $color3;
   border-radius: $border-base-radius;
   font-family: $serif-fonts;
 
   thead {
-    color: $color4;
-    font-weight: bold;
-    background-color: $color3;
+    background-color: $color1;
+    color: lighten($color4, 20%);
+    font-weight: normal;
   }
 
   tbody {
-    background-color: $color4;
+    background-color: $color2;
   }
 }
