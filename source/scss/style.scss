@@ -51,8 +51,7 @@ textarea {
   background-color: $color4;
   color: $color3;
   border-radius: $border-base-radius;
-  border-style: groove;
-  border-color: $color3;
+  border: 1px solid $color3;
 
   &.danger {
     color: #fff;
@@ -72,10 +71,9 @@ table {
   thead {
     background-color: $color1;
     color: lighten($color4, 20%);
-    font-weight: normal;
   }
 
   tbody {
-    background-color: $color2;
+    background-color: $color4;
   }
 }
